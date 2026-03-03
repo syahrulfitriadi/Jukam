@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukam – Jual Beli Kambing Berkualitas di Lampung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .sage-bg { background-color: #DCFCE7; }
+        .sage-text { color: #166534; }
+        .sage-accent { background-color: #A7F3D0; }
+        
+        /* Placeholder styling */
+        .img-placeholder {
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-weight: 500;
+            text-align: center;
+            padding: 2px;
+        }
+
+        /* Custom Hero Background overlay */
+        .hero-overlay {
+            background-image: url('assets/images/bg1.jpeg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+        }
+
+        /* Slider Animations */
+        .slider-container {
+            display: flex;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .slide {
+            min-width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tight sage-text">Jukam</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-green-600 transition">Home</a>
+                <a href="#kategori" class="hover:text-green-600 transition">Kategori</a>
+                <a href="#keunggulan" class="hover:text-green-600 transition">Keunggulan</a>
+                <a href="#kontak" class="hover:text-green-600 transition">Kontak</a>
+            </div>
+            <a href="https://wa.me/628123456789" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition shadow-sm">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6 overflow-hidden">
+        <!-- Background Image Placeholder -->
+        <div class="absolute inset-0 hero-overlay -z-20"></div>
+        
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 z-10 text-center lg:text-left">
+                <span class="inline-block px-4 py-1 rounded-full sage-bg sage-text text-sm font-semibold mb-4">
+                    Alindo Farm, Lampung
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
+                    Solusi Tepat, Jual Beli <span class="text-green-600">Kambing Berkualitas</span> di Lampung
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                    Dapatkan kambing terbaik untuk kebutuhan aqiqah, qurban, kontes, maupun bibit unggul langsung dari peternakan terpercaya.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/628123456789" class="bg-green-600 text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.207L6.233 18.25l3.193-1.047c.871.512 1.706.786 2.603.787h.001c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.765-5.767-5.765zm3.374 8.232c-.149.42-.767.766-1.055.814-.265.044-.61.077-1.393-.213-1.07-.396-1.761-1.488-1.815-1.561-.054-.073-.438-.583-.438-1.125s.283-.81.384-.914c.1-.104.218-.13.29-.13.073 0 .146 0 .21.003.067.003.157-.026.246.188.09.217.31.754.337.81.027.055.045.12.01.19-.036.07-.054.114-.11.177-.054.063-.114.14-.162.188-.055.056-.112.117-.048.226.064.11.285.47.61.76.418.372.77.488.878.534.11.046.173.038.237-.035.064-.074.274-.319.347-.428.073-.109.146-.09.246-.054s.637.3.747.355c.11.054.182.081.21.127.027.046.027.266-.123.686z"/></svg>
+                        Pesan via WhatsApp
+                    </a>
+                    <a href="#kategori" class="border border-gray-200 text-gray-700 text-center px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition">
+                        Lihat Katalog
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slider Container - Enlarged and Animated -->
+            <div class="lg:w-1/2 relative flex justify-center w-full group">
+                <!-- Outer Decoration Frame -->
+                <div class="absolute -inset-4 bg-green-50 rounded-[3.5rem] -z-10 rotate-2 group-hover:rotate-1 transition-transform duration-700"></div>
+                
+                <div class="relative w-full max-w-[550px] aspect-square bg-gray-100 rounded-[3rem] shadow-2xl overflow-hidden border-4 border-white transition-transform duration-500 group-hover:scale-[1.01]">
+                    
+                    <!-- Slider Wrapper -->
+                    <div id="hero-slider" class="slider-container h-full">
+                        <!-- Slide 1 -->
+                        <div class="slide img-placeholder relative h-full">
+                            <img src="assets/images/1.jpg" alt="Kambing Unggulan 1" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'text-center\'><b>Slide 1</b><br>(hero-1.jpg)</div>'">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide img-placeholder relative h-full">
+                            <img src="assets/images/11.jpg" alt="Kambing Unggulan 2" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'text-center\'><b>Slide 2</b><br>(hero-2.jpg)</div>'">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide img-placeholder relative h-full">
+                            <img src="assets/images/111.jpg" alt="Kambing Unggulan 3" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'text-center\'><b>Slide 3</b><br>(hero-3.jpg)</div>'">
+                        </div>
+                    </div>
+
+                    <!-- Slide Indicators -->
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <button onclick="goToSlide(0)" class="w-3 h-3 rounded-full bg-white/50 border border-black/10 transition-all indicator-btn active:bg-white"></button>
+                        <button onclick="goToSlide(1)" class="w-3 h-3 rounded-full bg-white/50 border border-black/10 transition-all indicator-btn"></button>
+                        <button onclick="goToSlide(2)" class="w-3 h-3 rounded-full bg-white/50 border border-black/10 transition-all indicator-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Kategori -->
+    <section id="kategori" class="py-20 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Kategori Pilihan</h2>
+                <div class="w-20 h-1 sage-accent mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Item 1: Pedaging -->
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 overflow-hidden img-placeholder">
+                        <img src="assets/images/kambing pedaging.jpg" alt="Kambing Pedaging" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.style.display='none'; this.parentElement.innerHTML='<p>Foto Pedaging<br>(kategori-pedaging.jpg)</p>'">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 sage-bg rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-5 h-5 sage-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Pedaging</h3>
+                        <p class="text-gray-500 text-sm">Kambing sehat dengan bobot maksimal untuk kebutuhan konsumsi harian.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Aqiqah / Qurban -->
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 overflow-hidden img-placeholder">
+                        <img src="assets/images/kambing aqiqah.jpg" alt="Kambing Qurban" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.style.display='none'; this.parentElement.innerHTML='<p>Foto Qurban<br>(kategori-qurban.jpg)</p>'">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 sage-bg rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-5 h-5 sage-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Aqiqah / Qurban</h3>
+                        <p class="text-gray-500 text-sm">Pilihan tepat sesuai syariat dengan perawatan intensif dan kebersihan terjaga.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Kontes -->
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 overflow-hidden img-placeholder">
+                        <img src="assets/images/kambing kontes.jpg" alt="Kambing Kontes" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.style.display='none'; this.parentElement.innerHTML='<p>Foto Kontes<br>(kategori-kontes.jpg)</p>'">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 sage-bg rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-5 h-5 sage-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Kontes</h3>
+                        <p class="text-gray-500 text-sm">Kambing dengan genetika unggul dan postur estetik siap untuk ajang kontes.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Bibit -->
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 overflow-hidden img-placeholder">
+                        <img src="assets/images/kambing breeding.jpg" alt="Bibit Kambing" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.style.display='none'; this.parentElement.innerHTML='<p>Foto Bibit<br>(kategori-bibit.jpg)</p>'">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-10 h-10 sage-bg rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-5 h-5 sage-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Bibit</h3>
+                        <p class="text-gray-500 text-sm">Cikal bakal ternak berkualitas untuk memulai atau mengembangkan bisnis peternakan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Keunggulan -->
+    <section id="keunggulan" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2">
+                <div class="w-full h-64 md:h-96 bg-gray-100 rounded-3xl flex items-center justify-center overflow-hidden border border-gray-200 shadow-xl img-placeholder">
+                    <img 
+                        src="assets/images/3.jpg" 
+                        alt="Suasana Peternakan Jukam" 
+                        class="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<p>Foto Peternakan<br>(peternakan.jpg)</p>'"
+                    >
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-8">Mengapa Memilih Jukam?</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-6 h-6 mt-1 flex items-center justify-center bg-green-100 rounded-full">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Pakan Terjamin</h4>
+                            <p class="text-gray-600">Menggunakan pakan organik dan nutrisi seimbang untuk kesehatan optimal.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-6 h-6 mt-1 flex items-center justify-center bg-green-100 rounded-full">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Kesehatan Terpantau</h4>
+                            <p class="text-gray-600">Setiap kambing melewati pemeriksaan kesehatan rutin secara berkala.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-6 h-6 mt-1 flex items-center justify-center bg-green-100 rounded-full">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Harga Kompetitif</h4>
+                            <p class="text-gray-600">Langsung dari peternakan tangan pertama tanpa perantara yang mahal.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-6 h-6 mt-1 flex items-center justify-center bg-green-100 rounded-full">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Lokasi Strategis</h4>
+                            <p class="text-gray-600">Berlokasi di Alindo Farm, mudah diakses dan siap kirim ke seluruh area Lampung.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-900 text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-green-400">Jukam</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Pusat jual beli kambing berkualitas tinggi di Lampung. Kami berkomitmen memberikan pelayanan terbaik untuk kebutuhan aqiqah, qurban, dan peternakan Anda.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Navigasi</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="#kategori" class="hover:text-white transition">Kategori Produk</a></li>
+                        <li><a href="#keunggulan" class="hover:text-white transition">Keunggulan Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
+                    <div class="space-y-4">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 h-48 w-full shadow-inner mb-4">
+                            <!-- Widget Google Maps (Warna Disesuaikan ke Dark Mode Footer) -->
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0" 
+                                src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Lampung,%20Indonesia+(Alindo%20Farm%20Jukam)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                style="filter: grayscale(1) invert(0.9) contrast(1.2);">
+                            </iframe>
+                        </div>
+                        <ul class="space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                Alindo Farm, Lampung, Indonesia
+                            </li>
+                            <li class="mt-4">
+                                <a href="https://wa.me/628123456789" class="inline-flex w-full justify-center items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-bold transition">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.207L6.233 18.25l3.193-1.047c.871.512 1.706.786 2.603.787h.001c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.765-5.767-5.765zm3.374 8.232c-.149.42-.767.766-1.055.814-.265.044-.61.077-1.393-.213-1.07-.396-1.761-1.488-1.815-1.561-.054-.073-.438-.583-.438-1.125s.283-.81.384-.914c.1-.104.218-.13.29-.13.073 0 .146 0 .21.003.067.003.157-.026.246.188.09.217.31.754.337.81.027.055.045.12.01.19-.036.07-.054.114-.11.177-.054.063-.114.14-.162.188-.055.056-.112.117-.048.226.064.11.285.47.61.76.418.372.77.488.878.534.11.046.173.038.237-.035.064-.074.274-.319.347-.428.073-.109.146-.09.246-.054s.637.3.747.355c.11.054.182.081.21.127.027.046.027.266-.123.686z"/></svg>
+                                    Chat WhatsApp Sekarang
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Jukam - Jual Beli Kambing Lampung. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slider Logic -->
+    <script>
+        let currentSlide = 0;
+        const slider = document.getElementById('hero-slider');
+        const indicators = document.querySelectorAll('.indicator-btn');
+        const totalSlides = 3;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((btn, idx) => {
+                if(idx === currentSlide) {
+                    btn.classList.add('bg-white', 'w-6');
+                    btn.classList.remove('bg-white/50', 'w-3');
+                } else {
+                    btn.classList.remove('bg-white', 'w-6');
+                    btn.classList.add('bg-white/50', 'w-3');
+                }
+            });
+        }
+
+        function goToSlide(idx) {
+            currentSlide = idx;
+            updateSlider();
+        }
+
+        // Auto slide every 4 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }, 4000);
+
+        // Initial update
+        updateSlider();
+    </script>
+
+</body>
+</html>
